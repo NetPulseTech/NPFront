@@ -1,0 +1,94 @@
+/**=====================
+    filter section css start
+==========================**/
+.filter-section {
+    box-shadow: $card-shadow;
+    border-radius: $radius-5;
+    background-color: rgba(var(--white), 1);
+
+    .card-title {
+        padding: 26px 35px;
+        border-bottom: 1px solid rgba(var(--theme-light), 1);
+    }
+
+    .filters-button-group {
+        button {
+            border: 1px solid rgba(var(--theme-color), 1);
+            background-color: rgba(var(--white), 1);
+            border-radius: 5px;
+            padding: 5px 10px;
+            margin: 0 0 0 10px;
+            color: rgba(var(--theme-color), 1);
+            font-weight: 500;
+            text-transform: capitalize;
+            transition: all 0.5s ease;
+
+            &.is-checked {
+                background-color: rgba(var(--theme-color), 1);
+                color: rgba(var(--white), 1);
+                transition: all 0.5s ease;
+            }
+        }
+    }
+
+    .filter-content {
+        padding: 26px 35px;
+
+        .grid {
+            margin-left: -10px;
+            margin-right: -10px;
+            margin-bottom: -20px;
+        }
+
+        .element-item {
+            flex: 0 0 20%;
+            max-width: 20%;
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-bottom: 20px;
+            width: 100%;
+
+            .img-sec {
+                border-radius: $radius-5;
+                margin-bottom: 10px;
+                position: relative;
+
+                .btn {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%) scale(0);
+                    opacity: 0;
+                    transition: all 0.5s ease;
+                }
+            }
+
+            .game-content {
+                h4 {
+                    color: rgba(var(--theme-color), 1);
+                    text-transform: capitalize;
+                    font-weight: 500;
+                }
+
+                h5 {
+                    color: rgba(var(--font-color), 1);
+                    line-height: 1.5;
+                }
+
+                p {
+                    color: rgba(var(--font-color), 0.7);
+                }
+            }
+
+            &:hover {
+                .img-sec {
+                    .btn {
+                        opacity: 1;
+                        transition: all 0.5s ease;
+                        transform: translate(-50%, -50%) scale(1);
+                    }
+                }
+            }
+        }
+    }
+}

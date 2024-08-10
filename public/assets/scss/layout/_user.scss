@@ -1,0 +1,32 @@
+/**=================================
+    User css start
+====================================**/
+.user-media {
+    .media {
+        align-items: center;
+    }
+
+    .user-img {
+        width: 55px;
+        height: 55px;
+        margin-right: 16px;
+        position: relative;
+        border-radius: $radius-10;
+    }
+
+    .media-body {
+        h5 {
+            font-family: $font-1;
+            color: rgba(var(--title-color), 1);
+            text-transform: capitalize;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        h6 {
+            text-transform: capitalize;
+            color: rgba(var(--font-color), 1);
+            font-weight: 500;
+        }
+    }
+}

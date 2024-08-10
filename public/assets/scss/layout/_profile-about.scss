@@ -1,0 +1,145 @@
+/**=====================
+    Profile about css start
+==========================**/
+.profile-about {
+    border-radius: $radius-5;
+    box-shadow: $card-shadow;
+    background-color: rgba(var(--white), 1);
+
+    .card-title {
+        padding: 30px 40px;
+    }
+
+    .about-content {
+        padding: 30px 40px;
+        border-top: 1px solid rgba(var(--theme-light), 1);
+
+        li {
+            display: flex;
+            align-items: center;
+
+            .icon {
+                width: 40px;
+                height: 40px;
+                border-radius: $radius-5;
+                background-color: rgba(var(--theme-light), 1);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: 22px;
+
+                use {
+                    fill: rgba(var(--title-color), 1);
+
+                    &.fill-color {
+                        width: 20px;
+                        height: 20px;
+                        fill: rgba(var(--title-color), 1);
+                    }
+                }
+
+                svg {
+                    width: 18px;
+                    height: 18px;
+                    stroke: rgba(var(--title-color), 1);
+                }
+            }
+
+            .details {
+                width: calc(100% - 45px);
+
+                h4 {
+                    color: rgba(var(--title-color), 1);
+                    font-family: $font-1;
+                    font-weight: 600;
+                    text-transform: capitalize;
+                    margin-bottom: 4px;
+                    line-height: 20px;
+                }
+
+                h5 {
+                    font-family: $font-1;
+                    font-weight: 600;
+                    text-transform: capitalize;
+                    color: rgba(var(--title-color), 1);
+                }
+
+                h6 {
+                    color: rgba(var(--font-color), 1);
+                    text-transform: capitalize;
+                    line-height: 24px;
+                    font-size: 14px;
+                }
+            }
+
+            +li {
+                margin-top: 30px;
+            }
+        }
+    }
+
+    .about-footer {
+        padding: 30px 40px;
+        border-top: 1px solid rgba(var(--theme-light), 1);
+
+        ul {
+            display: flex;
+            align-items: center;
+
+            li {
+                a {
+                    background-color: rgba(var(--theme-light), 1);
+                    padding: 8px 8px;
+                    border-radius: 5px;
+                    font-size: 12px;
+                    font-weight: 500;
+                    text-transform: capitalize;
+                    color: rgba(var(--white), 1);
+                    display: flex;
+
+                    svg {
+                        width: 16px;
+                        height: 16px;
+                        fill: rgba(var(--white), 1);
+                    }
+                }
+
+                &.fb {
+                    a {
+                        background-color: rgba(var(--facebook), 1);
+                    }
+                }
+
+                &.tw {
+                    a {
+                        background-color: rgba(var(--twitter), 1);
+                    }
+                }
+
+                &.wa {
+                    a {
+                        background-color: rgba(var(--whatsapp), 1);
+                    }
+                }
+
+                +li {
+                    margin-left: 12px;
+                }
+            }
+        }
+    }
+
+    &.pages-about {
+        .about-content {
+            li {
+                +li {
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}
+
+.order-1 {
+    order: -1 !important;
+}

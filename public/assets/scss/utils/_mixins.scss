@@ -1,0 +1,110 @@
+%default-scroll {
+
+    /* width */
+    ::-webkit-scrollbar {
+        width: 3px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: rgba(var(--theme-light), 1);
+        border-radius: 6px;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: rgba(var(--theme-color), 0.5);
+        border-radius: 4px;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        // background: darken(var(--theme-color), 0.2);
+        background: rgba(var(--theme-color), 0.2);
+    }
+}
+
+%light-scroll {
+
+    /* width */
+    ::-webkit-scrollbar {
+        width: 3px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: rgba(var(--theme-light), 1);
+        border-radius: 6px;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: rgba(var(--theme-color), 0.1);
+        border-radius: 4px;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: rgba(var(--theme-color), 0.2);
+        // background-color: darken(var(--theme-color),0.2);
+
+    }
+}
+
+%dark-scroll {
+
+    /* width */
+    ::-webkit-scrollbar {
+        width: 3px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: rgba(var(--black), 0.05);
+        border-radius: 6px;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: rgba(var(--theme-color), 0.5);
+        border-radius: 4px;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: rgba(var(--theme-color), 0.2);
+    }
+}
+
+%loader-skeleton {
+    // background: linear-gradient(90deg, rgba(var(--theme-light), 0.5) 8%, darken(var(--theme-light), 3%) 18%, var(--theme-light) 33%); 
+    background: linear-gradient(90deg, rgba(var(--theme-light)) 8%, #e0f1f8 18%, rgba(var(--theme-light)) 33%);
+    background-size: 800px 104px;
+    animation: skeleton-loader 2s infinite linear;
+}
+
+%loader-skeleton-white {
+    background: linear-gradient(90deg, rgba(var(--theme-light)) 8%, #f1f1f1 18%, rgba(var(--theme-light)) 33%);
+    background-size: 380px 44px;
+    animation: skeleton-loader 5s infinite linear;
+}
+
+$i: 1;
+
+@while $i<=50 {
+    .iw-#{$i} {
+        width: #{$i}px !important;
+    }
+
+    $i: $i+1;
+}
+
+$i: 1;
+
+@while $i<=50 {
+    .ih-#{$i} {
+        height: #{$i}px !important;
+    }
+
+    $i: $i+1;
+}

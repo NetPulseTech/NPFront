@@ -1,0 +1,14 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+// @import 'font-awesome/css/font-awesome.min.css';
+@import '~font-awesome/css/font-awesome.min.css';
+
+@import "./components/react_plugin";
+
+// react toastify css
+@import 'react-toastify/dist/ReactToastify.css';
+
+
+// Import Swiper styles
+@import 'swiper/scss';
+@import 'swiper/scss/navigation';
+@import 'swiper/scss/pagination';

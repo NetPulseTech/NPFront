@@ -1,0 +1,105 @@
+/*=====================
+ button css start
+==========================*/
+.btn {
+    padding: 7px 20px;
+    text-transform: capitalize;
+    font-size: $h6-size;
+    font-weight: 600;
+}
+
+.btn-solid {
+    background-color: rgba(var(--theme-color), 1);
+    border-radius: $radius-5;
+    border: 1px solid rgba(var(--theme-color), 1);
+    color: rgba(var(--white), 1);
+    transition: all 0.5s ease;
+
+    &:hover,
+    &:focus {
+        color: rgba(var(--theme-color), 1);
+        border: 1px solid rgba(var(--theme-color), 1);
+        background-color: rgba(var(--white), 1);
+        transition: all 0.5s ease;
+        box-shadow: 0px 9px 30px 0px rgba(var(--theme-color), 0.22);
+    }
+}
+
+.btn-outline {
+    background-color: rgba(var(--white), 1);
+    border-radius: $radius-5;
+    border: 1px solid rgba(var(--theme-color), 1);
+    color: rgba(var(--theme-color), 1);
+    transition: all 0.5s ease;
+
+    &:hover {
+        color: rgba(var(--white), 1);
+        border: 1px solid rgba(var(--theme-color), 1);
+        background-color: rgba(var(--theme-color), 1);
+        transition: all 0.5s ease;
+        box-shadow: 0px 9px 30px 0px rgba(var(--theme-color), 0.22);
+    }
+}
+
+.btn-white {
+    background-color: rgba(var(--white), 1);
+    border-radius: $radius-5;
+    border: 1px solid rgba(var(--white), 1);
+    color: rgba(var(--theme-color), 1);
+    transition: all 0.5s ease;
+
+    &:hover {
+        background-color: transparent !important;
+        border-color: rgba(var(--white), 1) !important;
+        color: rgba(var(--white), 1) !important;
+        transition: all 0.5s ease;
+    }
+}
+
+.btn-theme-light {
+    background-color: rgba(var(--theme-light), 1);
+    border-radius: $radius-5;
+    border: 1px solid rgba(var(--theme-light), 1);
+    color: rgba(var(--font-color), 1);
+    transition: all 0.5s ease;
+
+    &:hover {
+        color: rgba(var(--white), 1);
+        border: 1px solid rgba(var(--theme-color), 1);
+        background-color: rgba(var(--theme-color), 1);
+        transition: all 0.5s ease;
+    }
+}
+
+.setting-btn {
+    width: 25px;
+    height: 25px;
+    border-radius: $radius-100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(var(--theme-light), 1);
+
+    &.setting {
+        margin-left: auto;
+    }
+
+    &.light-btn {
+        background-color: rgba(var(--theme-light), 0.2);
+    }
+
+    &.no-bg {
+        background-color: transparent;
+    }
+}
+
+.btn-lg,
+.btn-group-lg>.btn {
+    padding: 12px 60px !important;
+    font-size: 16px;
+}
+
+.btn-md {
+    padding: 10px 40px !important;
+    font-size: 16px;
+}

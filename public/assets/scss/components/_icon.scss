@@ -1,0 +1,30 @@
+/**=====================
+    Form css start
+==========================**/
+.icon-theme {
+    stroke: rgba(var(--theme-color), 1);
+}
+
+.icon-dark {
+    stroke: rgba(var(--title-color), 1);
+}
+
+.icon-font-color {
+    stroke: rgba(var(--font-color), 1);
+}
+
+.icon-font-light {
+    stroke: rgba(var(--font-color), 0.6);
+}
+
+.icon-light {
+    stroke: rgba(var(--white), 1);
+}
+
+.stroke-width-3 {
+    stroke-width: 3px;
+}
+
+.fill-white {
+    fill: rgba(var(--white), 1);
+}
